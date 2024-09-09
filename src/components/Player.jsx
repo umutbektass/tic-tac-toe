@@ -5,7 +5,8 @@ const Player = ({ initialName, symbol,isActive }) => {
   const [isEditing, setIsEditing] = useState(false);
 
   function handleEditClick() {
-    setIsEditing(wasEditing => !wasEditing); // best practice setIsEditing(!isEditing) yerine bunu kullan. 
+    setIsEditing(wasEditing => !wasEditing); 
+    // best practice setIsEditing(!isEditing) yerine bunu kullan. 
     //Bu daha performanslı ve daha hızlı çalışır.
   }
   function handleChange (e) {
